@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/gta6-01/zhangzzz1878/gta6-01-entry/rank.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 [![reward](https://make.fun/badge/gta6-01/zhangzzz1878/gta6-01-entry/reward.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 
-Solmar Bay — an open-world crime game: a 2D top-down city to explore on foot and by car, with traffic, pedestrians, car stealing, a wanted level and police, story missions, combat, and a HUD with a minimap. Runs in a desktop browser from static files, no network.
+Solmar Bay is a 2D top-down open-world crime game: explore a coastal city on foot and by car, with street traffic, pedestrians, car stealing, a wanted level and police pursuit, story missions, combat, and a HUD with a minimap. It runs in a desktop browser from static files — no network, no libraries, no build step.
 
 ## Run it
 
@@ -14,22 +14,15 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-A 2D top-down open-world crime game that runs in a desktop browser from
-static files — no network, no libraries, no build step. Plain Canvas 2D and
-vanilla JavaScript, with synthesized WebAudio sound.
+A 2D top-down open-world crime game that runs in a desktop browser from static files — no network, no libraries, no build step. Plain Canvas 2D and vanilla JavaScript, with synthesized WebAudio sound.
 
 ## The story
 
-Rico Vega is fresh out of the county lockup and owes Mama Luz — the woman
-who raised him — one last favour. Across four jobs in the sun-soaked coastal
-city of **Solmar Bay**, Rico runs errands, steals a getaway car, survives an
-ambush at the docks, and makes a timed airport delivery, all while the
-Solmar Bay PD watches. Every name, place and character is original.
+Rico Vega is fresh out of the county lockup and owes Mama Luz — the woman who raised him — one last favour. Across four jobs in the sun-soaked coastal city of **Solmar Bay**, Rico runs errands, steals a getaway car, survives an ambush at the docks, and makes a timed airport delivery, all while the Solmar Bay PD watches. Every name, place and character is original.
 
 ## How to run
 
-Serve the `game/` folder with any static server and open it in a desktop
-browser, for example:
+Serve the `game/` folder with any static server and open it in a desktop browser, for example:
 
 ```sh
 cd game
@@ -37,15 +30,12 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-Or open `game/index.html` directly from disk via a static server of your
-choice. The game needs no network access at all.
+Or open `game/index.html` directly from disk via a static server of your choice. The game needs no network access at all.
 
 URL parameters:
 
 - `?seed=N` — rebuild the city deterministically from seed N.
-- `?shot=start|play|drive|chase&seed=N` — stage a fixed scene (title, on
-  foot, driving, police chase) and set `window.__shotReady = true` once it
-  is painted. Used for screenshots.
+- `?shot=start|play|drive|chase&seed=N` — stage a fixed scene (title, on foot, driving, police chase) and set `window.__shotReady = true` once it is painted. Used for screenshots.
 
 ## Controls
 
